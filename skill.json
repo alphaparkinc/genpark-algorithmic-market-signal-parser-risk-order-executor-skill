@@ -1,0 +1,35 @@
+{
+  "name": "genpark-algorithmic-market-signal-parser-risk-order-executor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Algorithmic trading agent harness, market signal parser & risk-constrained order executor.",
+  "author": "genpark",
+  "category": "crypto",
+  "tags": [
+    "algorithmic-trading",
+    "market-signals",
+    "risk-controller",
+    "order-executor",
+    "ph-august18"
+  ],
+  "inputs": {
+    "market_data_feed": {
+      "type": "object"
+    },
+    "risk_limits": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "trade_signal": {
+      "type": "string"
+    },
+    "position_sizing_pct": {
+      "type": "number"
+    },
+    "risk_constraint_satisfied": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
